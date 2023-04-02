@@ -1,5 +1,4 @@
 import { lazy } from "react";
-import MainLayout from "@/layouts/main";
 
 const CoverModules = lazy(() => import("@/modules/coverSection"));
 const TestimonialModules = lazy(() => import("@/modules/testimoniSection"));
@@ -23,26 +22,24 @@ const Distributor = lazy(() => import("@/modules/distributor"));
 const HomePages = () => {
   return (
     <div>
-      <MainLayout>
-        <CoverModules />
-        <TestimonialModules />
-        <ThirdSection />
-        <FourthSection />
-        <FifthSection />
-        <SixSection />
-        <SevenSection />
-        <EightSection />
-        <BpomSection />
-        <PurifikasiSection />
-        <RulesSection />
-        <ProfileDr />
-        <ProfileCompany />
-        <SolutionSection />
-        <YoutubeSection />
-        <FormSection />
-        <MarketPlace />
-        <Distributor />
-      </MainLayout>
+      <CoverModules />
+      <TestimonialModules />
+      <ThirdSection />
+      <FourthSection />
+      <FifthSection />
+      <SixSection />
+      <SevenSection />
+      <EightSection />
+      <BpomSection />
+      <PurifikasiSection />
+      <RulesSection />
+      <ProfileDr />
+      <ProfileCompany />
+      <SolutionSection />
+      <YoutubeSection />
+      <FormSection />
+      <MarketPlace />
+      <Distributor />
     </div>
   );
 };
