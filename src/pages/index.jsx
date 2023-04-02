@@ -22,26 +22,28 @@ const Distributor = lazy(() => import("@/modules/distributor"));
 
 const HomePages = () => {
   return (
-    <MainLayout>
-      <CoverModules />
-      <TestimonialModules />
-      <ThirdSection />
-      <FourthSection />
-      <FifthSection />
-      <SixSection />
-      <SevenSection />
-      <EightSection />
-      <BpomSection />
-      <PurifikasiSection />
-      <RulesSection />
-      <ProfileDr />
-      <ProfileCompany />
-      <SolutionSection />
-      <YoutubeSection />
-      <FormSection />
-      <MarketPlace />
-      <Distributor />
-    </MainLayout>
+    <div>
+      <MainLayout>
+        <CoverModules />
+        <TestimonialModules />
+        <ThirdSection />
+        <FourthSection />
+        <FifthSection />
+        <SixSection />
+        <SevenSection />
+        <EightSection />
+        <BpomSection />
+        <PurifikasiSection />
+        <RulesSection />
+        <ProfileDr />
+        <ProfileCompany />
+        <SolutionSection />
+        <YoutubeSection />
+        <FormSection />
+        <MarketPlace />
+        <Distributor />
+      </MainLayout>
+    </div>
   );
 };
 
