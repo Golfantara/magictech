@@ -1,4 +1,4 @@
-import bgSix from "@/assets/bgSix.jpg";
+import bgSix from "@/assets/Group33.png";
 
 const SixSection = () => {
   return (

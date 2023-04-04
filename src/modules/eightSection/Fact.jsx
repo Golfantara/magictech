@@ -1,13 +1,9 @@
-import { lazy } from "react";
+import img from "@/assets/Group74.jpg";
 
 const Fact = () => {
   return (
     <div className="grid place-content-center">
-      <img
-        src="https://source.unsplash.com/978x259"
-        className="rounded-xl my-10"
-        alt=""
-      />
+      <img src={img} className="rounded-xl my-10" alt="" />
     </div>
   );
 };

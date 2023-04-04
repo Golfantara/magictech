@@ -1,17 +1,18 @@
+import dokter from "@/assets/Group 6.png";
+import bgDr from "@/assets/Group60.png";
 const Profile = () => {
   return (
-    <div className="my-12">
+    <div
+      className="md:h-screen py-12 md:py-0 w-full bg-cover bg-no-repeat"
+      style={{ backgroundImage: `url(${bgDr})` }}
+    >
       <div className="grid grid-cols-1 lg:grid-cols-2 place-content-center px-4 lg:px-64">
         <div className="grid place-content-center">
-          <img
-            src="https://source.unsplash.com/315x315"
-            alt=""
-            className="rounded-full"
-          />
+          <img src={dokter} alt="" className="rounded-full" />
         </div>
-        <div className="grid place-content-center">
+        <div className="grid place-content-center py-12 text-white">
           <p className="text-4xl font-bold">Dr. Insan Agung Nugroho</p>
-          <div className="w-full h-0.5 bg-black my-4"></div>
+          <div className="w-full h-0.5 bg-white my-4"></div>
           <p className="font-bold text-xl">Konsultan Medis</p>
           <p className="my-2 text-lg">
             Dokter Insan Agung Nugroho adalah Konsul Medis terbaik kami yang

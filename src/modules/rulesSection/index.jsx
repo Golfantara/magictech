@@ -1,15 +1,16 @@
 import { lazy } from "react";
 const TableSection = lazy(() => import("@/modules/rulesSection/table"));
+import image from "@/assets/Layer 6 1.png";
 
 const Rules = () => {
   return (
-    <div className="my-24">
+    <div className="my-24 bg-[#E9EEF0] py-12">
       <div className="grid grid-cols-1 lg:grid-cols-2 place-content-center lg:px-64">
         <div className="grid px-4 lg:px-0 lg:place-content-center">
-          <p className="text-[#1D88C9] mb-4 text-3xl md:text-4xl font-bold">
-            ANJURAN PEMAKAIAN
+          <p className="text-[#1D88C9] mb-4 text-3xl md:text-5xl font-bold">
+            Anjuran Pemakaian
           </p>
-          <img src="https://source.unsplash.com/500x500" alt="" />
+          <img src={image} alt="" className="py-8" />
         </div>
         <div className="grid px-4 lg:px-0 lg:place-content-center">
           <p className="font-bold my-4">Dosis Pemakaian</p>

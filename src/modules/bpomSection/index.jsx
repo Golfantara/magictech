@@ -1,3 +1,6 @@
+import img from "@/assets/Group66.png";
+import img1 from "@/assets/Cek-Produk-BPOM-BPOM-RI 1.png";
+
 const Bpom = () => {
   return (
     <div className="my-12">
@@ -9,20 +12,9 @@ const Bpom = () => {
               dan BPOM
             </p>
           </p>
-          <div className="grid grid-cols-2 place-content-center mb-4">
+          <div className="grid place-content-center mb-4">
             <div className="grid place-content-center">
-              <img
-                src="https://source.unsplash.com/100x100"
-                className="rounded-full"
-                alt=""
-              />
-            </div>
-            <div className="grid place-content-center">
-              <img
-                src="https://source.unsplash.com/100x100"
-                className="rounded-full"
-                alt=""
-              />
+              <img src={img} alt="" />
             </div>
           </div>
         </div>
@@ -33,7 +25,7 @@ const Bpom = () => {
             melewati pengawasan Obat dan Makanan dengan no izin edar
             <span className="font-bold"> POM TR183311441</span>
           </p>
-          <img src="https://source.unsplash.com/500x298" alt="" />
+          <img src={img1} alt="" />
           <div className="grid grid-cols-2 md:grid-cols-3 place-content-start gap-4 mt-4">
             <div className="grid place-content-center">
               <button className="underline text-[#1972F5]">

@@ -1,10 +1,10 @@
-import bgFour from "@/assets/bgFourth.jpeg";
+import bgFour from "@/assets/Group.png";
 
 const FourthSection = () => {
   return (
     <div className="mt-12">
       <div
-        className="md:h-screen py-24 md:py-0 w-full bg-cover bg-no-repeat"
+        className="md:h-screen py-24 md:py-0 w-full bg-right md:bg-cover bg-no-repeat"
         style={{ backgroundImage: `url(${bgFour})` }}
       >
         <div className="grid grid-cols-1 lg:grid-cols-2 h-full place-content-center">

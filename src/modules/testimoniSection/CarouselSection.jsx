@@ -1,9 +1,19 @@
 import React, { useState } from "react";
 import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/solid";
+import img1 from "@/assets/1.png";
+import img2 from "@/assets/2.png";
+import img3 from "@/assets/3.png";
+import img4 from "@/assets/4.png";
+import img5 from "@/assets/5.png";
+import img6 from "@/assets/6.png";
+
 const images = [
-  { id: 1, src: "https://source.unsplash.com/500x500?male" },
-  { id: 2, src: "https://source.unsplash.com/500x500?female" },
-  { id: 3, src: "https://source.unsplash.com/500x500?cars" },
+  { id: 1, src: img1 },
+  { id: 2, src: img2 },
+  { id: 3, src: img3 },
+  { id: 4, src: img4 },
+  { id: 5, src: img5 },
+  { id: 6, src: img6 },
 ];
 
 const CarouselSection = () => {
@@ -22,7 +32,7 @@ const CarouselSection = () => {
   };
 
   return (
-    <div className="relative px-4 md:px-0">
+    <div className="relative grid place-content-center px-4 md:px-0">
       <div>
         <h1 className="text-4xl font-bold py-4">Testimoni</h1>
         <div className="h-1 w-1/2 bg-black mb-2 rounded-l-full rounded-r-full"></div>
@@ -31,11 +41,13 @@ const CarouselSection = () => {
           mereka.
         </p>
       </div>
-      <img
-        src={images[selectedImage].src}
-        alt={`Image ${selectedImage + 1}`}
-        className="block w-full"
-      />
+      <div className="grid place-content-center my-2">
+        <img
+          src={images[selectedImage].src}
+          alt={`Image ${selectedImage + 1}`}
+          className="max-w-xs"
+        />
+      </div>
       <div className="flex justify-evenly lg:mt-4 mb-6 lg:mb-0">
         <button
           className={

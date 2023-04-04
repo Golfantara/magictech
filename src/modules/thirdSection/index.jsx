@@ -1,5 +1,9 @@
 import NewsThirdLayout from "@/layouts/NewsThird";
 import WrapperThirdLayout from "@/layouts/NewsThird/WrapperThird";
+import img1 from "@/assets/5bfa69a0-a152-11eb-aced-b1e4142150fb 1.png";
+import img2 from "@/assets/Vladimir_Lenin 1.png";
+import img3 from "@/assets/download (5) 1.png";
+import img4 from "@/assets/YCv63VfL_400x400 1.png";
 
 const ThirdSection = () => {
   return (
@@ -7,13 +11,9 @@ const ThirdSection = () => {
       <NewsThirdLayout>
         <div className="grid place-content-center lg:place-content-end">
           <WrapperThirdLayout>
-            <div className="grid justify-center items-center grid-cols-1 md:grid-cols-[30%_70%]">
+            <div className="grid place-content-center grid-cols-1 md:grid-cols-[30%_70%]">
               <div>
-                <img
-                  src="https://source.unsplash.com/540x580?male"
-                  className="rounded-l-2xl"
-                  alt=""
-                />
+                <img src={img1} className="rounded-l-2xl" alt="" />
               </div>
               <div className="p-3 grid justify-center items-center">
                 <p className="text-2xl">
@@ -32,11 +32,7 @@ const ThirdSection = () => {
           <WrapperThirdLayout>
             <div className="grid justify-center items-center grid-cols-1 md:grid-cols-[30%_70%]">
               <div>
-                <img
-                  src="https://source.unsplash.com/540x580?female"
-                  className="rounded-l-2xl"
-                  alt=""
-                />
+                <img src={img2} className="rounded-l-2xl" alt="" />
               </div>
               <div className="p-3 grid justify-center items-center">
                 <p className="text-2xl">
@@ -54,11 +50,7 @@ const ThirdSection = () => {
           <WrapperThirdLayout>
             <div className="grid justify-center items-center grid-cols-1 md:grid-cols-[30%_70%]">
               <div>
-                <img
-                  src="https://source.unsplash.com/540x580?boys"
-                  className="rounded-l-2xl"
-                  alt=""
-                />
+                <img src={img3} className="rounded-l-2xl" alt="" />
               </div>
               <div className="p-3 grid justify-center items-center">
                 <p className="text-2xl">
@@ -77,11 +69,7 @@ const ThirdSection = () => {
           <WrapperThirdLayout>
             <div className="grid justify-center items-center grid-cols-1 md:grid-cols-[30%_70%]">
               <div className="">
-                <img
-                  src="https://source.unsplash.com/540x580?girls"
-                  className="rounded-l-2xl"
-                  alt=""
-                />
+                <img src={img4} className="rounded-l-2xl" alt="" />
               </div>
               <div className="p-3 grid justify-center items-center">
                 <p className="text-2xl">

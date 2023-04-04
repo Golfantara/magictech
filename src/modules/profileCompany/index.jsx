@@ -1,13 +1,11 @@
+import Company from "@/assets/COVER COPANY HABBATS v2 1.png";
+
 const profileCompany = () => {
   return (
     <div className="my-12">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 place-content-center px-4 lg:px-64">
         <div className="grid place-content-center">
-          <img
-            src="https://source.unsplash.com/522x370"
-            className="rounded-lg"
-            alt=""
-          />
+          <img src={Company} className="rounded-lg" alt="" />
         </div>
         <div className="grid place-content-center">
           <p className="text-[#1D88C9] text-4xl font-bold mb-10">

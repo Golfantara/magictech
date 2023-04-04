@@ -1,3 +1,5 @@
+import image from "@/assets/MAGICTECH 04 1.png";
+
 const Solution = () => {
   return (
     <div className="my-24">
@@ -20,7 +22,7 @@ const Solution = () => {
           </div>
         </div>
         <div>
-          <img src="https://source.unsplash.com/627x627" alt="" />
+          <img src={image} className="w-full" alt="" />
         </div>
       </div>
     </div>
