@@ -45,7 +45,7 @@ const CarouselSection = () => {
         <img
           src={images[selectedImage].src}
           alt={`Image ${selectedImage + 1}`}
-          className="max-w-xs"
+          className="max-w-xs md:max-w-lg"
         />
       </div>
       <div className="flex justify-evenly lg:mt-4 mb-6 lg:mb-0">
