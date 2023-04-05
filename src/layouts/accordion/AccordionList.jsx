@@ -18,7 +18,7 @@ function Accordion({ title, content }) {
         className="flex justify-between items-center py-4 cursor-pointer select-none"
         onClick={toggleAccordion}
       >
-        <h2 className="text-lg font-medium pl-5 text-[#020181]">{title}</h2>
+        <h2 className="text-lg font-medium pl-5">{title}</h2>
         <svg
           className={`w-6 h-6 transform transition-transform duration-300 mr-5 ${
             isOpen ? "rotate-180" : ""

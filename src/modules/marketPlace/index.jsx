@@ -10,7 +10,7 @@ const marketPlace = () => {
         <p>Sebagai langkah dalam memudahkan pelanggan,</p>
         <p>kami menyediakan penjualan dari berbagai platform marketplace</p>
       </div>
-      <div className="grid grid-cols-2 md:grid-cols-4 place-content-center gap-4">
+      <div className="grid grid-cols-2 md:grid-cols-4 mt-2 place-content-center gap-4">
         <div className="md:col-start-2 grid place-content-center">
           <button className="bg-[#5DB552] text-[#FFE5E6] py-2 px-5 rounded-lg">
             Tokopedia

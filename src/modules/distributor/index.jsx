@@ -10,7 +10,7 @@ function distributor() {
         data-aos-duration="500"
         data-aos-once="true"
       >
-        <h1 className="text-[#020181] font-bold">DISTRIBUTOR</h1>
+        <h1 className="font-bold">DISTRIBUTOR</h1>
       </div>
       <div className="mt-10 grid place-items-center gap-5">
         <Accordion title="Jabar" content="Bandung" />
