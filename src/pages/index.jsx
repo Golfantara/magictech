@@ -1,6 +1,7 @@
 import { lazy } from "react";
 
 const CoverModules = lazy(() => import("@/modules/coverSection"));
+const Navbar = lazy(() => import("@/components/navbar"));
 const TestimonialModules = lazy(() => import("@/modules/testimoniSection"));
 const ThirdSection = lazy(() => import("@/modules/thirdSection"));
 const FourthSection = lazy(() => import("@/modules/fourthSection"));
@@ -22,6 +23,7 @@ const Distributor = lazy(() => import("@/modules/distributor"));
 const HomePages = () => {
   return (
     <div>
+      <Navbar />
       <CoverModules />
       <TestimonialModules />
       <ThirdSection />

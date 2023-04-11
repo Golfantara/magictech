@@ -1,4 +1,68 @@
+import { createClient } from "@supabase/supabase-js";
+import { useState } from "react";
+// import { supabase } from "@/supabase";
+import Swal from "sweetalert2";
+import withReactContent from "sweetalert2-react-content";
+import { useForm } from "react-hook-form";
+
+const supabase = createClient(
+  "https://jofvxhgtyycklilvjpre.supabase.co",
+  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImpvZnZ4aGd0eXlja2xpbHZqcHJlIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTY4MTE3NjE0MSwiZXhwIjoxOTk2NzUyMTQxfQ.mhkD-kTePEsv2Cw7oqjxkoSmlf4dqwdFhnGy0sKorWM"
+);
+
 const form = () => {
+  const [nama, setNama] = useState("");
+  const [whatsapp, setWhatsapp] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+
+  const [loading, setLoading] = useState(false);
+
+  const {
+    control,
+    formState: { isValid },
+    handleSubmit,
+  } = useForm({
+    mode: "all",
+    defaultValues: {
+      nama: "dida",
+      whatsapp: "",
+      email: "",
+      message: "",
+    },
+  });
+
+  const MySwal = withReactContent(Swal);
+
+  const onSubmit = handleSubmit(async (data) => {
+    const { nama, whatsapp, email, message } = data;
+    const payload = { nama, whatsapp, email, message };
+    try {
+      setLoading(true);
+      const { error } = await supabase
+        .from("form")
+        .insert({ ...payload, nama, whatsapp, email, message });
+      if (error) {
+        setLoading(false);
+        MySwal.fire({
+          title: "Telah terjadi error",
+          text: error.message,
+          icon: "error",
+        });
+      }
+      setLoading(false);
+      if (!error) {
+        console.log(data);
+        MySwal.fire({
+          title: "Anda Berhasil mengisi form!",
+          icon: "success",
+        });
+      }
+    } catch (err) {
+      throw err;
+    }
+  });
+
   return (
     <div className="grid grid-cols-1 lg:grid-cols-2 place-content-center">
       <div className="grid place-content-center">
@@ -51,10 +115,15 @@ const form = () => {
       </div>
 
       <div>
-        <form className="grid place-content-center" action="">
+        <form onSubmit={onSubmit} className="grid place-content-center">
           <div className="grid place-content-center w-[360px] grid-cols-1">
             <label htmlFor="nama">Nama Anda :</label>
             <input
+              control={control}
+              label="Nama"
+              name="nama"
+              value={nama}
+              onChange={(e) => setNama(e.target.value)}
               className="bg-gray-200 shadow-lg rounded-lg p-1"
               type="text"
             />
@@ -62,6 +131,9 @@ const form = () => {
           <div className="grid grid-cols-1 ">
             <label htmlFor="whatsapp">Whatsapp :</label>
             <input
+              control={control}
+              value={whatsapp}
+              onChange={(e) => setWhatsapp(e.target.value)}
               className="bg-gray-200 shadow-lg rounded-lg p-1"
               type="number"
             />
@@ -69,6 +141,9 @@ const form = () => {
           <div className="grid grid-cols-1 ">
             <label htmlFor="email">Email : </label>
             <input
+              control={control}
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
               className="bg-gray-200 shadow-lg rounded-lg p-1"
               type="email"
             />
@@ -76,12 +151,17 @@ const form = () => {
           <div className="grid grid-cols-1 ">
             <label htmlFor="message">Message : </label>
             <textarea
+              control={control}
+              value={message}
+              onChange={(e) => setMessage(e.target.value)}
               className="bg-gray-200 shadow-lg rounded-lg p-1"
               type="text"
             />
           </div>
           <div className="grid place-content-center ">
-            <button className="p-2 my-2 rounded-lg bg-yellow-200">Send</button>
+            <button className="p-2 my-2 rounded-lg bg-yellow-200">
+              Submit
+            </button>
           </div>
         </form>
       </div>
