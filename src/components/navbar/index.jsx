@@ -29,9 +29,9 @@ export default function Navbar() {
                   className="object-cover rounded-full"
                 />
                 <Link to="/" className="">
-                  <button className="pl-2 text-2xl font-semibold text-[#C62937]">
+                  <div className="pl-2 text-2xl font-semibold text-[#C62937]">
                     Magictech
-                  </button>
+                  </div>
                 </Link>
               </div>
             </Link>
@@ -46,12 +46,12 @@ export default function Navbar() {
                   width="40px"
                   height="40px"
                   viewBox="0 0 32 32"
-                  enable-background="new 0 0 32 32"
+                  enableBackground="new 0 0 32 32"
                   id="Glyph"
                   version="1.1"
-                  xml:space="preserve"
+                  xmlSpace="preserve"
                   xmlns="http://www.w3.org/2000/svg"
-                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  xmlnsXlink="http://www.w3.org/1999/xlink"
                 >
                   <path
                     d="M26,16c0,1.104-0.896,2-2,2H8c-1.104,0-2-0.896-2-2s0.896-2,2-2h16C25.104,14,26,14.896,26,16z"
@@ -78,7 +78,7 @@ export default function Navbar() {
           >
             <ul className="flex flex-col lg:flex-row list-none lg:ml-auto">
               <li className="">
-                <button
+                <div
                   className="px-3 py-2 inline-block lg:flex items-center text-md font-semibold leading-snug"
                   to=""
                   onClick={() => setIsOpen1(!IsOpen1)}
@@ -87,10 +87,10 @@ export default function Navbar() {
                   <a href="#home" className="ml-2 mt-1 flex items-center">
                     Home
                   </a>
-                </button>
+                </div>
               </li>
               <li className="">
-                <button
+                <div
                   className="px-3 py-2 inline-block lg:flex items-center text-md font-semibold leading-snug"
                   to=""
                   onClick={() => setIsOpen1(!IsOpen1)}
@@ -99,10 +99,10 @@ export default function Navbar() {
                   <a href="#company" className="ml-2 mt-1 flex items-center">
                     About
                   </a>
-                </button>
+                </div>
               </li>
-              <li className="">
-                <button
+              <li>
+                <div
                   className="px-3 py-2 inline-block lg:flex items-center text-md font-semibold leading-snug"
                   to=""
                   onClick={() => setIsOpen1(!IsOpen1)}
@@ -111,10 +111,10 @@ export default function Navbar() {
                   <Link to="../Seminar" className="ml-2 mt-1 flex items-center">
                     Articles
                   </Link>
-                </button>
+                </div>
               </li>
               <li className="">
-                <button
+                <div
                   className="px-3 py-2 inline-block lg:flex items-center text-md font-semibold leading-snug"
                   to=""
                   onClick={() => setIsOpen1(!IsOpen1)}
@@ -126,10 +126,10 @@ export default function Navbar() {
                   >
                     Distributor
                   </a>
-                </button>
+                </div>
               </li>
               <li className="">
-                <button
+                <div
                   className="px-3 py-2 inline-block lg:flex items-center text-md font-semibold leading-snug"
                   to=""
                   onClick={() => setIsOpen1(!IsOpen1)}
@@ -138,7 +138,7 @@ export default function Navbar() {
                   <a href="#contact" className="ml-2 mt-1 flex items-center">
                     Contact
                   </a>
-                </button>
+                </div>
               </li>
               {/* <li className="">
                 <Link
