@@ -3,7 +3,7 @@ import AccordionList from "@/layouts/accordion/AccordionList";
 
 function distributor() {
   return (
-    <div>
+    <div id="distributor">
       <div
         className="grid place-items-center"
         data-aos="fade-down"

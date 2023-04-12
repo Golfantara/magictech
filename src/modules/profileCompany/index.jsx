@@ -2,7 +2,7 @@ import Company from "@/assets/COVER COPANY HABBATS v2 1.png";
 
 const profileCompany = () => {
   return (
-    <div className="my-12">
+    <div id="company" className="my-12">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 place-content-center px-4 lg:px-64">
         <div className="grid place-content-center">
           <img src={Company} className="rounded-lg" alt="" />

@@ -6,7 +6,7 @@ import "aos/dist/aos.css";
 export default function Navbar() {
   const [navbarOpen, setNavbarOpen] = useState(false);
   const [IsOpen1, setIsOpen1] = useState(false);
-  const [IsOpen2, setIsOpen2] = useState(false);
+  //   const [IsOpen2, setIsOpen2] = useState(false);
 
   useEffect(() => {
     AOS.init();
@@ -26,10 +26,10 @@ export default function Navbar() {
                 <img
                   src="https://source.unsplash.com/100x100"
                   alt=""
-                  className="object-cover"
+                  className="object-cover rounded-full"
                 />
                 <Link to="/" className="">
-                  <button className="pl-2 text-2xl font-semibold text-[#020181]">
+                  <button className="pl-2 text-2xl font-semibold text-[#C62937]">
                     Magictech
                   </button>
                 </Link>
@@ -79,27 +79,75 @@ export default function Navbar() {
             <ul className="flex flex-col lg:flex-row list-none lg:ml-auto">
               <li className="">
                 <button
-                  className="px-3 py-2 inline-block lg:flex items-center text-md font-bold leading-snug"
+                  className="px-3 py-2 inline-block lg:flex items-center text-md font-semibold leading-snug"
                   to=""
                   onClick={() => setIsOpen1(!IsOpen1)}
                   onMouseLeave={() => setIsOpen1(false)}
                 >
-                  <Link
-                    to="../Seminar"
-                    className="ml-2 mt-1 flex items-center text-[20px] font-medium"
-                  >
-                    test
+                  <a href="#home" className="ml-2 mt-1 flex items-center">
+                    Home
+                  </a>
+                </button>
+              </li>
+              <li className="">
+                <button
+                  className="px-3 py-2 inline-block lg:flex items-center text-md font-semibold leading-snug"
+                  to=""
+                  onClick={() => setIsOpen1(!IsOpen1)}
+                  onMouseLeave={() => setIsOpen1(false)}
+                >
+                  <a href="#company" className="ml-2 mt-1 flex items-center">
+                    About
+                  </a>
+                </button>
+              </li>
+              <li className="">
+                <button
+                  className="px-3 py-2 inline-block lg:flex items-center text-md font-semibold leading-snug"
+                  to=""
+                  onClick={() => setIsOpen1(!IsOpen1)}
+                  onMouseLeave={() => setIsOpen1(false)}
+                >
+                  <Link to="../Seminar" className="ml-2 mt-1 flex items-center">
+                    Articles
                   </Link>
                 </button>
               </li>
               <li className="">
+                <button
+                  className="px-3 py-2 inline-block lg:flex items-center text-md font-semibold leading-snug"
+                  to=""
+                  onClick={() => setIsOpen1(!IsOpen1)}
+                  onMouseLeave={() => setIsOpen1(false)}
+                >
+                  <a
+                    href="#distributor"
+                    className="ml-2 mt-1 flex items-center"
+                  >
+                    Distributor
+                  </a>
+                </button>
+              </li>
+              <li className="">
+                <button
+                  className="px-3 py-2 inline-block lg:flex items-center text-md font-semibold leading-snug"
+                  to=""
+                  onClick={() => setIsOpen1(!IsOpen1)}
+                  onMouseLeave={() => setIsOpen1(false)}
+                >
+                  <a href="#contact" className="ml-2 mt-1 flex items-center">
+                    Contact
+                  </a>
+                </button>
+              </li>
+              {/* <li className="">
                 <Link
-                  className="px-3 py-2 inline-block lg:flex items-center text-md uppercase font-bold leading-snug"
+                  className="px-3 py-2 inline-block lg:flex items-center text-md uppercase font-semibold leading-snug"
                   to=""
                   onClick={() => setIsOpen2(!IsOpen2)}
                   onMouseLeave={() => setIsOpen2(false)}
                 >
-                  <button className="ml-2 flex items-center text-[20px] font-medium">
+                  <button className="ml-2 flex items-center">
                     test
                     <i className="text-lg leading-lg">
                       <svg
@@ -149,7 +197,7 @@ export default function Navbar() {
                     </div>
                   </div>
                 </Link>
-              </li>
+              </li> */}
             </ul>
           </div>
         </div>

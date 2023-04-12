@@ -64,7 +64,10 @@ const form = () => {
   });
 
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-2 place-content-center">
+    <div
+      id="contact"
+      className="grid grid-cols-1 lg:grid-cols-2 place-content-center"
+    >
       <div className="grid place-content-center">
         <div className="grid place-content-center w-[360px] grid-cols-1">
           <div className="grid place-content-center text-center">
