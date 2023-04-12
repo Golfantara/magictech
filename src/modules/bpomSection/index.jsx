@@ -1,5 +1,8 @@
+import { Link } from "react-router-dom";
 import img from "@/assets/Group66.png";
 import img1 from "@/assets/Cek-Produk-BPOM-BPOM-RI 1.png";
+import bpom from "@/assets/NIE Manggistech EXP 2027.pdf";
+import mui from "@/assets/Halal certificate PT MAN - Manggistech.pdf";
 
 const Bpom = () => {
   return (
@@ -28,14 +31,22 @@ const Bpom = () => {
           <img src={img1} alt="" />
           <div className="grid grid-cols-2 md:grid-cols-3 place-content-start gap-4 mt-4">
             <div className="grid place-content-center">
-              <button className="underline text-[#1972F5]">
+              <Link
+                to={bpom}
+                target="_blank"
+                className="underline text-[#1972F5]"
+              >
                 Lihat Surat BPOM
-              </button>
+              </Link>
             </div>
             <div className="grid place-content-center">
-              <button className="underline text-[#1972F5]">
+              <Link
+                to={mui}
+                target="_blank"
+                className="underline text-[#1972F5]"
+              >
                 Lihat Sertifikat Halal
-              </button>
+              </Link>
             </div>
           </div>
         </div>
