@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import image from "@/assets/MAGICTECH 04 1.png";
 
 const Solution = () => {
@@ -16,8 +17,10 @@ const Solution = () => {
             !!
           </p>
           <div>
-            <button className="bg-[#1D88C9] text-white py-2 px-5 rounded-lg text-xl">
-              Pesan Sekarang
+            <button className="bg-[#1D88C9] text-white py-2 px-5 rounded-lg text-xl hover:font-bold">
+              <Link to="https://wa.link/ncmd49" target="_blank">
+                Pesan Sekarang
+              </Link>
             </button>
           </div>
         </div>
