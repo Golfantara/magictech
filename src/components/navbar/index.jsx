@@ -108,7 +108,7 @@ export default function Navbar() {
                   onClick={() => setIsOpen1(!IsOpen1)}
                   onMouseLeave={() => setIsOpen1(false)}
                 >
-                  <Link to="../Seminar" className="ml-2 mt-1 flex items-center">
+                  <Link to="" className="ml-2 mt-1 flex items-center">
                     Articles
                   </Link>
                 </div>
