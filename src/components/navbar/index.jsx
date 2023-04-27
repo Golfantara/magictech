@@ -23,14 +23,9 @@ export default function Navbar() {
           <div className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
             <Link to="/" className="group">
               <div className="flex items-center w-[50px] h-[50px]">
-                <img
-                  src="https://source.unsplash.com/100x100"
-                  alt=""
-                  className="object-cover rounded-full"
-                />
                 <Link to="/" className="">
-                  <div className="pl-2 text-2xl font-semibold text-[#C62937]">
-                    Magictech
+                  <div className="pl-2 text-2xl font-bold text-[#C62937]">
+                    MAGICTECH
                   </div>
                 </Link>
               </div>
