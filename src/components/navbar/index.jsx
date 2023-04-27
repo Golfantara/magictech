@@ -42,7 +42,7 @@ export default function Navbar() {
             >
               <i>
                 <svg
-                  fill="#020181"
+                  fill="#000000"
                   width="40px"
                   height="40px"
                   viewBox="0 0 32 32"
