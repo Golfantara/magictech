@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import img from "@/assets/Group66.png";
 import img1 from "@/assets/Cek-Produk-BPOM-BPOM-RI 1.png";
 import bpom from "@/assets/NIE.pdf";
-import mui from "@/assets/halal.pdf";
+import mui from "@/assets/Halal.pdf";
 
 const Bpom = () => {
   return (
