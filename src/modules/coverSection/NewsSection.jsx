@@ -15,7 +15,7 @@ const NewsSection = () => {
               Kanker Merupakan Penyebab Kematian <br /> No 2 Di Dunia
             </p>
             <div className="h-1 w-full bg-white my-2 rounded-l-full rounded-r-full"></div>
-            <img src={img1} alt="" />
+            <img src={img1} alt="" className="w-fit" />
           </WrapperLayout>
         </div>
         <div className="grid place-content-center lg:place-content-start">
@@ -24,7 +24,7 @@ const NewsSection = () => {
               396,914 penderita Kanker di Indonesia <br /> pada tahun 2020
             </p>
             <div className="h-1 w-full bg-white my-2 rounded-l-full rounded-r-full"></div>
-            <img src={img2} alt="" />
+            <img src={img2} alt="" className="w-fit" />
           </WrapperLayout>
         </div>
         <div className="grid place-content-center lg:place-content-end">
@@ -34,14 +34,14 @@ const NewsSection = () => {
               2025
             </p>
             <div className="h-1 w-full bg-white my-2 rounded-l-full rounded-r-full"></div>
-            <img src={img3} alt="" />
+            <img src={img3} alt="" className="w-fit" />
           </WrapperLayout>
         </div>
         <div className="grid place-content-center lg:place-content-start">
           <WrapperLayout>
-            <p className="text-lg p-4">Biaya Pengobatan Kanker yang Mahal</p>
+            <p className="text-lg">Biaya Pengobatan Kanker yang Mahal</p>
             <div className="h-1 w-full bg-white my-2 rounded-l-full rounded-r-full"></div>
-            <img src={img4} alt="" />
+            <img src={img4} alt="" className="w-fit" />
           </WrapperLayout>
         </div>
       </NewsLayout>
