@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 import { createClient } from "@supabase/supabase-js";
 import { useState } from "react";
-// import { supabase } from "@/supabase";
 import Swal from "sweetalert2";
 import withReactContent from "sweetalert2-react-content";
 import { useForm } from "react-hook-form";
