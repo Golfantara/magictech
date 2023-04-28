@@ -25,7 +25,7 @@ const form = () => {
   } = useForm({
     mode: "all",
     defaultValues: {
-      nama: "dida",
+      nama: "name",
       whatsapp: "",
       email: "",
       message: "",
