@@ -21,12 +21,12 @@ const FourthSection = () => {
               optimal saat dikonsumsi
             </p>
             <div className="grid pt-6 grid-cols-2 px-4 md:px-0 gap-2 md:grid-cols-4">
-              <button className="bg-[#1D88C9] p-1 py-2 rounded-lg text-base text-white hover:font-bold">
+              <button className="bg-[#1D88C9] p-1 py-2 rounded-lg text-base text-white hover:scale-90">
                 <Link to="https://wa.link/ncmd49" target="_blank">
                   Beli Sekarang
                 </Link>
               </button>
-              <button className="bg-[#C92064] p-1 py-2 rounded-lg text-base text-white hover:font-bold">
+              <button className="bg-[#C92064] p-1 py-2 rounded-lg text-base text-white hover:scale-90">
                 <Link to="https://wa.link/aeveql" target="_blank">
                   Tanya Dokter
                 </Link>

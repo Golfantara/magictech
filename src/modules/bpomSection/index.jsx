@@ -34,7 +34,7 @@ const Bpom = () => {
               <Link
                 to={bpom}
                 target="_blank"
-                className="underline text-[#1972F5]"
+                className="hover:underline text-[#1972F5]"
               >
                 Lihat Surat BPOM
               </Link>
@@ -43,7 +43,7 @@ const Bpom = () => {
               <Link
                 to={mui}
                 target="_blank"
-                className="underline text-[#1972F5]"
+                className="hover:underline text-[#1972F5]"
               >
                 Lihat Sertifikat Halal
               </Link>

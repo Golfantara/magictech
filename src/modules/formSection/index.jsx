@@ -71,14 +71,18 @@ const form = () => {
       <div className="grid place-content-center">
         <div className="grid place-content-center w-[360px] grid-cols-1">
           <div className="grid place-content-center text-center">
-            <h3>Contact</h3>
+            <h3 className="text-3xl font-bold">Contact</h3>
             <p>
               Dibuka Kesempatan juga Informasi produk dan penesaban bisa
               menghubungi kontak dibawah ini
             </p>
           </div>
           <div className="grid place-content-center text-center py-6">
-            <Link to="https://wa.link/ncmd49" target="_blank">
+            <Link
+              to="https://wa.link/ncmd49"
+              target="_blank"
+              className="hover:scale-90"
+            >
               <svg
                 width="100px"
                 height="100px"

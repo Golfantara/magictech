@@ -79,7 +79,10 @@ export default function Navbar() {
                   onClick={() => setIsOpen1(!IsOpen1)}
                   onMouseLeave={() => setIsOpen1(false)}
                 >
-                  <a href="#home" className="ml-2 mt-1 flex items-center">
+                  <a
+                    href="#home"
+                    className="ml-2 mt-1 flex items-center lg:hover:underline"
+                  >
                     Home
                   </a>
                 </div>
@@ -91,7 +94,10 @@ export default function Navbar() {
                   onClick={() => setIsOpen1(!IsOpen1)}
                   onMouseLeave={() => setIsOpen1(false)}
                 >
-                  <a href="#company" className="ml-2 mt-1 flex items-center">
+                  <a
+                    href="#company"
+                    className="ml-2 mt-1 flex items-center lg:hover:underline"
+                  >
                     About
                   </a>
                 </div>
@@ -103,7 +109,10 @@ export default function Navbar() {
                   onClick={() => setIsOpen1(!IsOpen1)}
                   onMouseLeave={() => setIsOpen1(false)}
                 >
-                  <Link to="" className="ml-2 mt-1 flex items-center">
+                  <Link
+                    to=""
+                    className="ml-2 mt-1 flex items-center lg:hover:underline"
+                  >
                     Articles
                   </Link>
                 </div>
@@ -117,7 +126,7 @@ export default function Navbar() {
                 >
                   <a
                     href="#distributor"
-                    className="ml-2 mt-1 flex items-center"
+                    className="ml-2 mt-1 flex items-center lg:hover:underline"
                   >
                     Distributor
                   </a>
@@ -130,7 +139,10 @@ export default function Navbar() {
                   onClick={() => setIsOpen1(!IsOpen1)}
                   onMouseLeave={() => setIsOpen1(false)}
                 >
-                  <a href="#contact" className="ml-2 mt-1 flex items-center">
+                  <a
+                    href="#contact"
+                    className="ml-2 mt-1 flex items-center lg:hover:underline"
+                  >
                     Contact
                   </a>
                 </div>

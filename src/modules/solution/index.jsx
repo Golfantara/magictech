@@ -17,7 +17,7 @@ const Solution = () => {
             !!
           </p>
           <div>
-            <button className="bg-[#1D88C9] text-white py-2 px-5 rounded-lg text-xl hover:font-bold">
+            <button className="bg-[#1D88C9] text-white py-2 px-5 rounded-lg text-xl hover:scale-90">
               <Link to="https://wa.link/ncmd49" target="_blank">
                 Pesan Sekarang
               </Link>

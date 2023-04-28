@@ -56,7 +56,7 @@ const CarouselSection = () => {
           }
           onClick={handlePrevious}
         >
-          <ChevronLeftIcon className="h-12 w-12 bg-slate-500 rounded-full" />
+          <ChevronLeftIcon className="h-12 w-12 bg-slate-500 rounded-full hover:scale-90" />
         </button>
         <button
           className={
@@ -66,7 +66,7 @@ const CarouselSection = () => {
           }
           onClick={handleNext}
         >
-          <ChevronRightIcon className="h-12 w-12 p-2 bg-slate-500 rounded-full" />
+          <ChevronRightIcon className="h-12 w-12 bg-slate-500 rounded-full hover:scale-90" />
         </button>
       </div>
     </div>
